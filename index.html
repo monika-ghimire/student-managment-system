@@ -16,7 +16,7 @@
         <div class="row align-items-start">
           <div class="col box form-holder">
             <!-- here the form start point -->
-            <form action="/action_page.php">
+            <form >
                  <label for="ID">ID:</label><br>
                  <input type="ID" id="ID" name="ID" ><br>
                   <label for="fname">First name:</label><br>
@@ -26,20 +26,17 @@
                   <label for="DOB">DOB:</label><br>
                  <input type="date" id="DOB" name="DOB" ><br>
                  <br>
-                 <select class=" gender-select">
-                <option selected>male</option>
-                <option value="1">female</option>
-                <option value="2">other</option>
-              </select>
-              <br>
-              <br>
-                  <input type="submit" value="Submit">
+                  
             </form> 
-
+            <input onclick="sumbitBtn()" type="submit" value="Submit">
             <!-- and fromm end -->
           </div>
           <div class="col box">
             <h4>student name & Id</h4>
+            <ul id="showStudentData" >
+              <li></li><br>
+            
+          </ul>
           </div>
         </div>
 
@@ -47,7 +44,7 @@
         <div class="row align-items-center">
              
           <div class="col box delet-data">
-            One of three columns
+            <h4> find student by ID</h4>
           </div>
           <div class="col box ">
             One of three columns
