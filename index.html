@@ -8,69 +8,66 @@
   </head>
   <link rel="stylesheet" href="style.css">
   <body>
-    <div class="container-fuild contenet-holder">
-        <h2>STUDENT MANAGEMENT SYSTEM</h2>
-        <br>
-        <!-- here start the contenet -->
-        <!-- its take 2 box and from  -->
-        <div class="row align-items-start">
-          <div class="col box form-holder">
-            <!-- here the form start point -->
-            <form >
-                 <label for="ID">ID:</label><br>
-                 <input type="ID" id="ID" name="ID" ><br>
-                  <label for="fname">First name:</label><br>
-                 <input type="text" id="fname" name="fname" ><br>
-                  <label for="lname">Last name:</label><br>
-                  <input type="text" id="lname" name="lname" ><br>
-                  <label for="DOB">DOB:</label><br>
-                 <input type="date" id="DOB" name="DOB" ><br>
-                 <br>
+    <div class="container">
+        <h2 class="header">STUDENT MANAGEMENT SYSTEM</h2>
+        <div class="row">
+            <div class="col">
+                <div class="col box form-holder">
+                    <!-- here the form start point -->
+                    <form >
+                         <label for="ID">ID:</label><br>
+                         <input type="ID" id="ID" name="ID" ><br>
+                          <label for="fname">First name:</label><br>
+                         <input type="text" id="fname" name="fname" ><br>
+                          <label for="lname">Last name:</label><br>
+                          <input type="text" id="lname" name="lname" ><br>
+                          <label for="DOB">DOB:</label><br>
+                         <input type="date" id="DOB" name="DOB" ><br>
+                         <br>
+                          
+                    </form> 
+                    <button onclick="sumbitBtn()" type="submit">Submit</button>
+                    <!-- and fromm end -->
                   
-            </form> 
-            <input onclick="sumbitBtn()" type="submit" value="Submit">
-            <!-- and fromm end -->
-          </div>
-          <div class="col box">
-            <h4>student name & Id</h4>
-            <ul id="showStudentData" >
-              
-            
-          </ul>
-          </div>
-        </div>
+                  </div>
+                     <!-- here is delet contener -->
+                     <div class=" box delet-data">
+                        <h4>  detelet student data </h4>
+                        <form>
+                          <label for="ID">enter id for delete</label><br><br>
+                             <input type="ID" id="IDForDelete" name="ID" ><br>
+                             <p id="showDeleteId"></p>
+                        </form>
+                        <br>
+                        <button onclick="deleteData()" id="checkIdBtnDelete">Delete</button>
+                      </div>
+                  
+            </div>
 
-         <!-- here and bootom box  -->
-        <div class="row align-items-center">
-             
-          <div class="col box delet-data">
-            <h4>  detelet student data </h4>
-            <form>
-              <label for="ID">enter id for delete</label><br><br>
-                 <input type="ID" id="IDForDelete" name="ID" ><br>
-                 <p id="showDeleteId"></p>
-            </form>
-            <br>
-            <button onclick="deleteData()" id="checkIdBtnDelete">Delete</button>
-          </div>
 
-          </div>
-          <div class="col box ">
-            <h4> find student by ID</h4>
-            <br>
-            <form>
-              <label for="ID">enter id to find satudent</label><br><br>
-                 <input type="ID" id="IDForCHeck" name="ID" ><br>
-                 <p id="displayStudentDetail"></p>
-            </form>
-            <br>
-            <button onclick="showDetailsId()" id="checkIdBtn">search</button>
-          </div>
-        </div>
-        
-        
-       
-    </div>
+
+
+            <!-- this is bottom contener -->
+            <div class="col">
+                <div class="box">
+                    <h4>student name & Id</h4>
+                    <ul id="showStudentData">
+                  </ul>
+                  </div>
+                  <!-- this is find contener -->
+                  <div class="col box findID">
+                    <h4> find student by ID</h4>
+                    <br>
+                    <form>
+                      <label for="ID">enter id to find satudent</label><br><br>
+                         <input type="ID" id="IDForCHeck" name="ID" ><br>
+                         <p id="displayStudentDetail"></p>
+                    </form>
+                    <br>
+                    <button onclick="showDetailsId()" id="checkIdBtn">search</button>
+                  </div>
+            </div>
+      </div>
       <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>

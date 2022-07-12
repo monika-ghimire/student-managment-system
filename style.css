@@ -1,24 +1,39 @@
-.contenet-holder
-{
-   
-    text-align:center;
-}
+
 .box
 {
-    background-color: aqua;
-    
-    border:2px solid black;
-
+    background-color: rgb(166, 252, 252);
+     border-radius:5%;
+     margin:3%;
+    text-align: center;
+     box-shadow:3px 3px  rgb(119, 119, 119);
+     font-weight: bold;
 }
-.form-holder
+.header
 {
-  
+    font-weight:bold;
+    font-family:serif;
+}
+.container
+{
+    text-align:center;  
+   
+}
+.box button
+{
+    width:25%;
+    margin-bottom:5%;
+    border:0px;
+}
+.box button:hover
+{
+    background-color:rgb(182, 246, 189);
 }
 .delet-data
 {
-    
+    background-color:rgb(246, 133, 133);
 }
-.bottom-right
+.delet-data button:hover
 {
-    
+    background-color:red;
+    border:0px;
 }
